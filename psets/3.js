@@ -10,3 +10,6 @@ http://math2.org/math/geometry/circles.htm
 */
 
 // write your solution here...
+var radius = 5;
+document.write('The circunference is ' + (radius * 2 * Math.PI) + '.');
+document.write('The area is ' + (Math.pow(radius,2) * Math.PI) + '.');

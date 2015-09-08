@@ -12,3 +12,12 @@ Write a function named calculateAge that:
 */
 
 // write your solution here...
+function calculateAge(birth){
+  var date = new Date()
+  document.write('You are either ' + (date.getFullYear() - birth) + ' or ' + (date.getFullYear() - birth - 1) +' years old.');
+}
+
+calculateAge(1991);
+calculateAge(1986);
+calculateAge(1990);
+calculateAge(2012);

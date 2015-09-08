@@ -12,3 +12,8 @@ Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no mo
 */
 
 // write your solution here...
+var age1 = 23;
+var age2 = 115;
+var samba = 2;
+
+document.write('You will need ' + ((age2 - age1)*samba*365) + ' to last you until the ripe old age of ' + age2 + '.');

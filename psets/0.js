@@ -11,3 +11,16 @@ Why pay a fortune teller when you can just program your fortune yourself?
 */
 
 // write your solution here...
+var number = 16;
+var partner = "Marial Guadalupe";
+var geo = "Seattle";
+var job = "Loco";
+
+var html ="";
+
+html += 'You will be a ' + job;
+html += " in " + geo;
+html += ', and married to ' + partner;
+html += ' with ' + number + ' kids.';
+
+document.write('<h1>' + html + '</h1>');

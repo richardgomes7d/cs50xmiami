@@ -17,4 +17,25 @@ For example:
 
 function notBad(sentence) {
   // write your solution here...
+  var notLoc = -1;
+  var badLoc = -1;
+  // var order = false;
+  for(var i = 0; i < sentence.length; i++){
+    // console.log(sentence.substr(i, 3));
+    if(sentence.substr(i, 3).toLowerCase() == "not"){
+      notLoc = i;
+    }
+    if(sentence.substr(i, 3).toLowerCase() == "bad"){
+      badLoc = i + 3;
+    }
+  }
+  if(notLoc < badLoc && notLoc != -1){
+    return sentence.substr(0,notLoc) + ' good ' + sentence.substr(badLoc, sentence.length);
+  }
+
+  return sentence;
 }
+
+var text = prompt('Text:');
+
+document.write('<h1>' + notBad(text) + '</h1>');

@@ -11,3 +11,11 @@ http://www.mathsisfun.com/temperature-conversion.html
 */
 
 // write your solution here...
+
+var celsius = 25;
+
+document.write('<h1>' + celsius + '&degC is ' + (celsius * (9/5) + 32) + '&degF</h1>');
+
+var fahrenheit = 71;
+
+document.write('<h1>' + fahrenheit + '&degF is ' + ((fahrenheit - 32) * (5/9)) + '&degC</h1>');

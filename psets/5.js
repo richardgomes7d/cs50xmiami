@@ -12,4 +12,15 @@ For example:
 
 function drEvil(amount) {
   // write your solution here...
+  if( amount != 1000000)
+    return amount + ' dollars';
+  else {
+    return amount + ' dollars (pinky)';
+  }
 }
+
+var money = prompt('How much money did you say?');
+
+money = drEvil(money);
+
+document.write('<h1>' + money + '</h1>');

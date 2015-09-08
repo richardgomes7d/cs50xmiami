@@ -10,3 +10,8 @@ Forgot how old someone is? Calculate it!
 */
 
 // write your solution here...
+var current = 2015;
+var birth = 1991;
+
+// document.write('hello');
+document.write('They are either ' + (current - birth) + ' or ' + (current - birth - 1) +' years old.');

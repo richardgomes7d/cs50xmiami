@@ -18,4 +18,21 @@ For example:
 
 function verbing(word) {
   // write your solution here...
+  var size = word.length;
+  if(size > 3){
+    // console.log(word.substr(size - 3, size));
+    if(word.substr(size - 3, size).toLowerCase() === "ing" ){
+      return word.toLowerCase() + 'ly';
+    }
+    else {
+      return word.toLowerCase() + 'ing';
+    }
+  }
+  return word;
+
 }
+
+var word = prompt('Word:');
+// var size = word.length;
+// console.log(word.substr(size - 3, size));
+document.write('<h1>' + verbing(word) + '</h1>');
