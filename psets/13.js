@@ -14,3 +14,13 @@ Create a function called calcArea:
 */
 
 // write your solution here...
+function calcCircumference(radius){
+  document.write('<h1>The circunference is ' + (radius * 2 * Math.PI) + '.</h1>');
+}
+
+function calcArea(radius){
+  document.write('<h1>The area is ' + (Math.pow(radius,2) * Math.PI) + '.</h1>');
+}
+
+calcCircumference(prompt('Give me the radius'));
+calcArea(prompt('Give me the radius'));

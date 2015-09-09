@@ -14,3 +14,15 @@ Create a function called fahrenheitToCelsius:
 */
 
 // write your solution here...
+
+function celsiusToFahrenheit(celsius){
+  document.write('<h1>' + celsius + '&degC is ' + (celsius * (9/5) + 32) + '&degF</h1>');
+}
+
+
+function fahrenheitToCelsius(fahrenheit){
+  document.write('<h1>' + fahrenheit + '&degF is ' + ((fahrenheit - 32) * (5/9)) + '&degC</h1>');
+}
+
+celsiusToFahrenheit(prompt('Give me your celsius'));
+fahrenheitToCelsius(prompt('Give me your fahrenheit'));
