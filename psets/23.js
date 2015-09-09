@@ -11,3 +11,25 @@ It's like IMDB, but much much smaller!
 */
 
 // write your solution here...
+var movie = {
+  title : "Gattaca",
+  duration : 106,
+  stars : [
+    "Ethan Hawke",
+    "Uma Thurman"
+  ]
+}
+
+function printMovie(movie){
+  document.write('<h1>' + movie.title + ' lasts for ' + movie.duration + ' minutes. Stars: ');
+  for(var i = 0; i < movie.stars.length; i++){
+
+    if( i === (movie.stars.length - 1))
+      document.write(movie.stars[i] + '.');
+    else {
+      document.write(movie.stars[i] + ', ');
+    }
+  }
+}
+
+printMovie(movie);

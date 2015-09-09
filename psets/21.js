@@ -18,3 +18,20 @@ Never forget another recipe!
 */
 
 // write your solution here...
+var recipe = {
+  Title : "Spaghetti Aglio e Olio",
+  Serves : 4,
+  Ingredients : [
+    "Spaghetti",
+    "Garlic",
+    "Tomato",
+    "Olive Oil"
+  ]
+
+}
+
+console.log(recipe.Title);
+console.log('Serves: ' + recipe.Serves);
+
+for(ingredient in recipe.Ingredients)
+  console.log(recipe.Ingredients[ingredient]);

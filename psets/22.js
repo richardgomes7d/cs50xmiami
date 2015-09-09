@@ -17,3 +17,15 @@ Keep track of which books you read and which books you want to read!
 */
 
 // write your solution here...
+var books = [
+    {titleB : "The Catcher in the Rye", author : "J. D. Salinger", alreadyRead : true},
+    {titleB : "Cien Años de Soledad", author : "Gabriel Garcia Marquez", alreadyRead : true},
+    {titleB : "A Clash of Kings", author : "George R. R. Martin", alreadyRead : false}
+];
+
+for( var i = 0; i < books.length; i++){
+  if(books[i].alreadyRead)
+    document.write('<p> You already read "' + books[i].titleB + '" by ' + books[i].author + '.</p>');
+  else
+    document.write('<p> You need to read "' + books[i].titleB + '" by ' + books[i].author + '.</p>');
+}
