@@ -13,6 +13,9 @@ Write a function named calculateSupply that:
 
 // write your solution here...
 function calculateSupply(age, samba){
-  document.write('You will need ' + ((age2 - age1)*samba*365) + ' to last you until the ripe old age of ' + age2 + '.');
-
+  document.write('<h1>You will need ' + ((115 - age)*Math.round(samba)*365) + ' to last you until the ripe old age of ' + 115 + '.</h1>');
 }
+
+calculateSupply(23, 2);
+calculateSupply(25, 3);
+calculateSupply(34, 7);
