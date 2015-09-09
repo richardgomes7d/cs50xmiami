@@ -7,3 +7,10 @@ The even/odd reporter
 */
 
 // write your solution here...
+for(var i = 0; i < 20; i++){
+  if( i % 2 == 0)
+    document.write('<p>' + i + ': Even.</p>');
+  else {
+    document.write('<p>' + i + ': Odd.</p>  ')
+  }
+}

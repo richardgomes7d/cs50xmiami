@@ -11,3 +11,18 @@ and log the result to make sure it works.
 */
 
 // write your solution here...
+function helloWorld(lang){
+  switch(lang){
+    case 'es':
+      document.write('<h1>Hola, Mundo</h1>');
+      break;
+    case 'en':
+      document.write('<h1>Hello, World</h1>');
+      break;
+    case 'de':
+      document.write('<h1>Hallo, Welt</h1>');
+      break;
+  }
+}
+
+helloWorld(prompt('Give me a language code:'));

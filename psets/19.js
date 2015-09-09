@@ -9,3 +9,22 @@ Write a for loop that will iterate from 0 to 10.
 */
 
 // write your solution here...
+var html = "<table border = 1 cellpadding = 10><tr><th></th>"
+
+for(var j = 0; j < 10; j++)
+  html += '<th>' + j + '</th>';
+
+html += '</tr>';
+
+for(var j = 0; j < 10; j++)
+{
+  html += '<tr>';
+  for(var i = 0; i < 10; i++){
+    if( i == 0)
+      html += '<td><b>' + j + '</b></td>';
+    html += '<td>' + i + ' * ' + j + ' = ' + (i*j) + '</td>';
+  }
+  html += '</tr>';
+}
+
+document.write(html);
